@@ -5,10 +5,6 @@ from work_lamp import WorkLamp
 
 
 class BrokenLamp(LampInterface):
-    __counter: int = 0
-    __attempts: int = 0
-    __lamp: WorkLamp = None
-
     def __init__(self, attempts: int):
         assert attempts >= 0
         self.__attempts = attempts

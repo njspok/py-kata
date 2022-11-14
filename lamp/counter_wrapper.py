@@ -2,9 +2,6 @@ from man import LampInterface
 
 
 class CounterWrapper(LampInterface):
-    __counter: int = 0
-    __lamp: LampInterface = None
-
     def __init__(self, lamp: LampInterface):
         self.__counter = 0
         self.__lamp = lamp

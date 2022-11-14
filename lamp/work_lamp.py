@@ -4,7 +4,6 @@ from man import LampInterface
 class WorkLamp(LampInterface):
     __ON: str = "on"
     __OFF: str = "off"
-    __light: str = None
 
     def __init__(self):
         self.__light = self.__OFF
